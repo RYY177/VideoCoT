@@ -1,2 +1,2 @@
 # VideoCoT
-long video understanding
+Long video understanding pipeline
