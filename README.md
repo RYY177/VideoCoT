@@ -3,6 +3,10 @@ Long video understanding pipeline
 
 pipeline: https://o1ddfyjva23.feishu.cn/wiki/Kqclwp0RaiFwGokjJJ2cC9c0nQh?from=from_copylink
 
+several articles: https://o1ddfyjva23.feishu.cn/wiki/BlUdwo24bi9rlWkpjfbcSBB4nvJ?from=from_copylink
+
+previous work by me: https://o1ddfyjva23.feishu.cn/wiki/ZpEmwtkLOi1CaFkMfMbcaa1Hnob?from=from_copylink
+
 ---
 ### Update: 2025.09.08
 In `split.py`, Step 1 and Step 2.1 have been completed. Scene segmentation was implemented using `scenedetect`, along with frame sampling for each scene. 
