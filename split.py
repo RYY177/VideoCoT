@@ -72,13 +72,13 @@ def split_video_semantic(video_path, target_n=10,
                          final_min_scene_sec=10,   # 合并阶段再约束最短时长
                          use_adaptive=False,
                          show_progress=True):
-    # 1) 先检测：阈值合适 + 小/零 min_scene_len
+    # 1) 检测
     scenes = detect_scenes(video_path, threshold=threshold,
                            min_scene_sec=detect_min_scene_sec,
                            use_adaptive=use_adaptive)
     # 2) 合并到满足最终最短时长
     scenes = merge_short_scenes(scenes, final_min_scene_sec)
-    # 3) 若仍多，进一步合并到 N
+    # 3) 进一步合并到 N
     # scenes = cap_to_n_scenes(scenes, target_n)
     # 4) 切视频
     # split_video_ffmpeg(video_path, scenes, show_progress=show_progress)
@@ -107,9 +107,8 @@ def uniform_sample_indices(start_f: int, end_f: int, *,
                            fps_samples: Optional[float] = None,
                            video_fps: float = 30.0) -> List[int]:
     """
-    - frames_per_scene: 每段固定抽多少张（常用：3~8）
+    - frames_per_scene: 每段固定抽多少张
     - fps_samples: 每秒抽多少张（比如 1.0 表示 1 fps）
-    两者择一；若都给，则优先 frames_per_scene。
     """
     length = max(0, end_f - start_f + 1)
     if length <= 0:
@@ -201,7 +200,7 @@ def extract_frames_per_scene(
     resize_shorter: Optional[int] = None,     # 可选：把短边缩放到该值，加速
 ) -> None:
     """
-    将每个场景抽取代表帧并保存到 output_dir/scene_xxx。
+    将每个场景抽取代表帧并保存到 output_dir
     """
     ensure_dir(output_dir)
 
@@ -240,7 +239,7 @@ def extract_frames_per_scene(
             frame_ids = select_topk_with_nms(indices, scores,
                                              k=frames_per_scene,
                                              min_gap_frames=min_gap_frames)
-            # 兜底：如果有效帧不足 K，再均匀补齐
+            # 如果有效帧不足 K，再均匀补齐
             if len(frame_ids) < frames_per_scene:
                 extra = uniform_sample_indices(
                     start_f, end_f,
