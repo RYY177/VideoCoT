@@ -1,0 +1,31 @@
+/home/avozikis1/my_env/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+Traceback (most recent call last):
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 402, in http_get
+    import hf_transfer  # type: ignore[no-redef]
+ModuleNotFoundError: No module named 'hf_transfer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/gpfs/home4/avozikis1/Qwen-2.5/qwen.py", line 79, in <module>
+    processor = AutoProcessor.from_pretrained(
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/transformers/models/auto/processing_auto.py", line 302, in from_pretrained
+    preprocessor_config_file = cached_file(
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/transformers/utils/hub.py", line 321, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/transformers/utils/hub.py", line 567, in cached_files
+    raise e
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/transformers/utils/hub.py", line 479, in cached_files
+    hf_hub_download(
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 1010, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 1171, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 1738, in _download_to_tmp_and_move
+    http_get(
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 404, in http_get
+    raise ValueError(
+ValueError: Fast download using 'hf_transfer' is enabled (HF_HUB_ENABLE_HF_TRANSFER=1) but 'hf_transfer' package is not available in your environment. Try `pip install hf_transfer`.

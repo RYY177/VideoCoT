@@ -1,0 +1,38 @@
+[pip] installing: ['decord', 'qwen-vl-utils']
+Defaulting to user installation because normal site-packages is not writeable
+Collecting decord
+  Using cached decord-0.6.0-py3-none-manylinux2010_x86_64.whl.metadata (422 bytes)
+Requirement already satisfied: qwen-vl-utils in /gpfs/home4/avozikis1/.local/lib/python3.9/site-packages (0.0.8)
+Collecting qwen-vl-utils
+  Using cached qwen_vl_utils-0.0.11-py3-none-any.whl.metadata (6.3 kB)
+Requirement already satisfied: numpy>=1.14.0 in /gpfs/home4/avozikis1/.local/lib/python3.9/site-packages (from decord) (2.0.2)
+Requirement already satisfied: av in /gpfs/home4/avozikis1/.local/lib/python3.9/site-packages (from qwen-vl-utils) (15.0.0)
+Requirement already satisfied: packaging in /gpfs/home4/avozikis1/.local/lib/python3.9/site-packages (from qwen-vl-utils) (25.0)
+Requirement already satisfied: pillow in /gpfs/home4/avozikis1/.local/lib/python3.9/site-packages (from qwen-vl-utils) (11.3.0)
+Requirement already satisfied: requests in /usr/lib/python3.9/site-packages (from qwen-vl-utils) (2.25.1)
+Requirement already satisfied: chardet<5,>=3.0.2 in /usr/lib/python3.9/site-packages (from requests->qwen-vl-utils) (4.0.0)
+Requirement already satisfied: idna<3,>=2.5 in /usr/lib/python3.9/site-packages (from requests->qwen-vl-utils) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /gpfs/home4/avozikis1/.local/lib/python3.9/site-packages (from requests->qwen-vl-utils) (1.26.20)
+Using cached decord-0.6.0-py3-none-manylinux2010_x86_64.whl (13.6 MB)
+Using cached qwen_vl_utils-0.0.11-py3-none-any.whl (7.6 kB)
+Installing collected packages: decord, qwen-vl-utils
+  Attempting uninstall: qwen-vl-utils
+    Found existing installation: qwen-vl-utils 0.0.8
+    Uninstalling qwen-vl-utils-0.0.8:
+      Successfully uninstalled qwen-vl-utils-0.0.8
+
+Successfully installed decord-0.6.0 qwen-vl-utils-0.0.11
+
+JOB STATISTICS
+==============
+Job ID: 13994429
+Cluster: snellius
+User/Group: avozikis1/avozikis1
+State: FAILED (exit code 1)
+Nodes: 1
+Cores per node: 18
+CPU Utilized: 00:00:08
+CPU Efficiency: 2.22% of 00:06:00 core-walltime
+Job Wall-clock time: 00:00:20
+Memory Utilized: 3.80 MB
+Memory Efficiency: 0.01% of 64.00 GB (64.00 GB/node)

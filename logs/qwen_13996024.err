@@ -1,0 +1,64 @@
+
+-------------- /sw/arch/RHEL9/EB_production/2024/modulefiles/vis --------------
+   FFmpeg/7.0.2-GCCcore-13.3.0
+
+If the avail list is too long consider trying:
+
+"module --default avail" or "ml -d av" to just list the default modules.
+"module overview" or "ml ov" to display the number of modules for each name.
+
+Use "module spider" to find all possible modules and extensions.
+Use "module keyword key1 key2 ..." to search for all possible modules matching
+any of the "keys".
+
+
+
+----------------------------------------------------------------------------
+  FFmpeg:
+----------------------------------------------------------------------------
+    Description:
+      A complete, cross-platform solution to record, convert and stream
+      audio and video.
+
+     Versions:
+        FFmpeg/4.4.2-GCCcore-11.3.0
+        FFmpeg/6.0-GCCcore-12.3.0
+        FFmpeg/7.0.2-GCCcore-13.3.0
+
+----------------------------------------------------------------------------
+  For detailed information about a specific "FFmpeg" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider FFmpeg/7.0.2-GCCcore-13.3.0
+----------------------------------------------------------------------------
+
+ 
+
+Lmod has detected the following error: The following module(s) are unknown:
+"CUDA/12.4.1"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "CUDA/12.4.1"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown:
+"cuDNN/9.1.1.17-CUDA-12.4.1"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "cuDNN/9.1.1.17-CUDA-12.4.1"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Unable to load any of {libcudnn_ops.so.9.1.0, libcudnn_ops.so.9.1, libcudnn_ops.so.9, libcudnn_ops.so}
+Invalid handle. Cannot load symbol cudnnCreateTensorDescriptor
+/var/spool/slurm/slurmd/job13996024/slurm_script: line 41: 1651051 Aborted                 $HOME/my_env/bin/python -u /gpfs/home4/avozikis1/Qwen-2.5/maria.py

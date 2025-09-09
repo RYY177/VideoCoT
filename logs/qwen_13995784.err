@@ -1,0 +1,52 @@
+
+-------------- /sw/arch/RHEL9/EB_production/2024/modulefiles/vis --------------
+   FFmpeg/7.0.2-GCCcore-13.3.0
+
+If the avail list is too long consider trying:
+
+"module --default avail" or "ml -d av" to just list the default modules.
+"module overview" or "ml ov" to display the number of modules for each name.
+
+Use "module spider" to find all possible modules and extensions.
+Use "module keyword key1 key2 ..." to search for all possible modules matching
+any of the "keys".
+
+
+
+----------------------------------------------------------------------------
+  FFmpeg:
+----------------------------------------------------------------------------
+    Description:
+      A complete, cross-platform solution to record, convert and stream
+      audio and video.
+
+     Versions:
+        FFmpeg/4.4.2-GCCcore-11.3.0
+        FFmpeg/6.0-GCCcore-12.3.0
+        FFmpeg/7.0.2-GCCcore-13.3.0
+
+----------------------------------------------------------------------------
+  For detailed information about a specific "FFmpeg" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider FFmpeg/7.0.2-GCCcore-13.3.0
+----------------------------------------------------------------------------
+
+ 
+
+Lmod has detected the following error: These module(s) or extension(s) exist
+but cannot be loaded as requested: "FFmpeg/4.4.2-GCCcore-11.3.0"
+   Try: "module spider FFmpeg/4.4.2-GCCcore-11.3.0" to see how to load the
+module(s).
+
+
+
+/home/avozikis1/my_env/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+You have video processor config saved in `preprocessor.json` file which is deprecated. Video processor configs should be saved in their own `video_preprocessor.json` file. You can rename the file or load and save the processor back which renames it automatically. Loading from `preprocessor.json` will be removed in v5.0.
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:05<00:20,  5.15s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:10<00:15,  5.01s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:14<00:09,  4.97s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:19<00:04,  4.98s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:21<00:00,  3.82s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:21<00:00,  4.35s/it]
+Unable to load any of {libcudnn_ops.so.9.1.0, libcudnn_ops.so.9.1, libcudnn_ops.so.9, libcudnn_ops.so}
+Invalid handle. Cannot load symbol cudnnCreateTensorDescriptor
+/var/spool/slurm/slurmd/job13995784/slurm_script: line 38: 2637287 Aborted                 $HOME/my_env/bin/python -u /gpfs/home4/avozikis1/Qwen-2.5/qwen_transcribe.py

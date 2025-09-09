@@ -1,0 +1,91 @@
+torch: 2.7.0+cu126 build CUDA: 12.6
+CUDA available: True
+GPU: NVIDIA A100-SXM4-40GB
+cuDNN enabled: True version: 90501
+CUDNN_LIBDIR: /home/avozikis1/my_env/lib64/python3.9/site-packages/nvidia/cudnn/lib
+libcudnn*: ['/home/avozikis1/my_env/lib64/python3.9/site-packages/nvidia/cudnn/lib/libcudnn_ops.so.9', '/home/avozikis1/my_env/lib64/python3.9/site-packages/nvidia/cudnn/lib/libcudnn.so.9', '/home/avozikis1/my_env/lib64/python3.9/site-packages/nvidia/cudnn/lib/libcudnn_cnn.so.9', '/home/avozikis1/my_env/lib64/python3.9/site-packages/nvidia/cudnn/lib/libcudnn_engines_precompiled.so.9', '/home/avozikis1/my_env/lib64/python3.9/site-packages/nvidia/cudnn/lib/libcudnn_heuristic.so.9', '/home/avozikis1/my_env/lib64/python3.9/site-packages/nvidia/cudnn/lib/libcudnn_engines_runtime_compiled.so.9', '/home/avozikis1/my_env/lib64/python3.9/site-packages/nvidia/cudnn/lib/libcudnn_adv.so.9', '/home/avozikis1/my_env/lib64/python3.9/site-packages/nvidia/cudnn/lib/libcudnn_graph.so.9']
+[env] device=cuda, dtype=torch.bfloat16, model=Qwen/Qwen2.5-VL-7B-Instruct
+[ffmpeg] found at /sw/arch/RHEL9/EB_production/2024/software/FFmpeg/7.0.2-GCCcore-13.3.0/bin/ffmpeg
+[demo] found 2 videos under mlvu_samples/MLVU/video/9_summary
+[demo] summarizing with ASR: mlvu_samples/MLVU/video/9_summary/205.mp4
+————————————————————————————————————————————————————————————————————————————————
+[asr] loading faster-whisper model=medium, device=cuda, compute_type=float16
+### Summary of the Video Clip
+
+#### Scene 1: Chimpanzee in the Rainforest
+- **Visuals**: A chimpanzee is shown climbing a tree trunk in a dense jungle environment.
+- **Actions**: The chimpanzee is seen using its hands and feet to navigate the rough bark, occasionally pausing to inspect or interact with the tree.
+- **Text Subtitles**: "Chimps are extremely intelligent" and "but none is born with the skill to use a tool."
+- **Camera Movements**: The camera follows the chimpanzee closely, zooming in on its face and hands as it climbs.
+
+#### Scene 2: Aerial View of the Rainforest
+- **Visuals**: An aerial view of the rainforest is shown, highlighting the vast expanse of greenery.
+- **Text Subtitles**: "Here in the Congo, there can be as many as 500 trees crammed into every acre."
+- **Camera Movements**: The camera pans across the forest, showcasing the dense canopy and the variety of trees.
+
+#### Scene 3: Tree Canopy and Competition
+- **Visuals**: Close-ups of tree canopies and the forest floor are shown.
+- **Text Subtitles**: "In the battle for space, some will rise to over 60 meters high in just a few decades."
+- **Camera Movements**: The camera zooms in on individual trees and then pans out to show the entire forest landscape.
+
+#### Scene 4: Forest Floor and Plant Competition
+- **Visuals**: The camera focuses on the forest floor, showing young trees and plants growing amidst fallen leaves.
+- **Text Subtitles**: "Up here the crowns barely touch, each tree seems to respect its neighbor’s space."
+- **Camera Movements**: The camera moves slowly, capturing the intricate details of the forest floor and the competition among the plants.
+
+#### Scene 5: Sunlight and Plant Growth
+- **Visuals**: The camera captures the sun filtering through the dense canopy, illuminating the forest floor.
+- **Text Subtitles**: "When they germinate down on the forest floor, young trees and plants are less restrained."
+- **Camera Movements**: The camera pans up to show the canopy and then back down to the forest floor, emphasizing the interplay between light and plant growth.
+
+#### Scene 6: Snake in the Forest
+- **Visuals**: A snake is shown basking in the sunlight on the forest floor.
+- **Text Subtitles**: "The forest's largest predator, a female rock python. Her body is five meters long, weighs a hundred kilos, and has 4,000 muscles."
+- **Camera Movements**: The camera zooms in on the snake's scales and then pulls back to show its full length.
+
+#### Scene 7: Snake Incubating Eggs
+- **Visuals**: The snake is shown wrapping itself around a nest filled with eggs.
+- **Text Subtitles**: "It's critical for the eggs' development that they stay above 30 degrees."
+- **Camera Movements**: The camera focuses on the snake's body as it incubates the eggs, showing the texture of its scales and the eggs inside.
+
+#### Scene 8: Snake's Efforts and Challenges
+- **Visuals**: The snake is shown moving away from the nest, indicating the end of its incubation period.
+- **Text Subtitles**: "At last her efforts are rewarded, but the babies can't stay here. They must leave their sanctuary and find food in the tangled world above."
+- **Camera Movements**: The camera follows the snake as it moves through the forest, highlighting its size and the challenges it faces.
+
+#### Scene 9: Baby Snakes Hatching
+- **Visuals**: The camera shows baby snakes hatching from their eggs.
+- **Text Subtitles**: "They're over 60 centimeters long, already big enough to be a threat to the smaller inhabitants of the forest."
+- **Camera Movements**: The camera captures the delicate process of hatching and the newborn snakes emerging from their eggs.
+
+#### Scene 10: Forest Floor Life
+- **Visuals**: Various insects and small creatures are shown on the forest floor.
+- **Text Subtitles**: "But they are themselves vulnerable."
+- **Camera Movements**: The camera pans across the forest floor, highlighting the diversity of life and the constant struggle for survival.
+
+### Conclusion
+The video provides a detailed exploration of the rainforest ecosystem, focusing on the interactions between animals and their environment. From the intelligent behavior of chimpanzees to the competitive dynamics of plant growth, and the challenges faced by a snake incubating its eggs, the video offers a comprehensive look at the complex web of life in the rainforest. The scenes transition smoothly, providing a vivid and immersive experience of the forest's natural beauty and the intricate relationships within it.
+[summary] TXT saved at: mlvu_samples/MLVU/video/9_summary/205.summary.txt
+
+[ASR full transcript]
+ Intelligent, but none is born with the skill to use a tool Youngsters like this one must learn by watching She uses special tools one after another to get all the honey she can and in a few minutes She destroys what took the bees years to build in the rain forest Nothing is safe Here in the Congo there can be as many as 500 trees crammed into every acre In the battle for space some will rise to over 60 meters high in just a few decades In a valley like this there could be close on 1,000 different species of tree Up here the crowns barely touch each tree seems to respect its neighbors space When they germinate down on the forest floor young trees and plants are less restrained But every new generation fights it out in battles. We can see by accelerating time They must get light if they are to survive And they squeeze crush and even a slash one another in order to reach it Despite the thick canopy above some sunlight does filter through and allows a few low-light Specialists to bloom near the forest floor down here There are animals too that seek out the sunlight the forest's largest predator a female rock python Her body is five meters long weighs a hundred kilos and has 4,000 muscles that she uses to crush the life out of her victims But right now her need is not for food. It's for warmth she finds a rare patch where a shaft of sunlight strikes the ground and She begins to bask She's cold-blooded. So this is the only way she can raise the temperature of her body But now she's becoming very warm indeed more than 10 degrees hotter than usual at 40 degrees centigrade She's in danger of killing herself Just in time she moves off. He disappears below ground This is her nest and it's full of giant eggs It's critical for the eggs development that they stay above 30 degrees Here in this special filming burrow. She gently wraps her superheated body around the eggs Passing on to them the warmth of the Sun She has done this every day for three months the repeated heat stress on her body is so great it could be lethal and At the very least it will take three years for her to recover from incubating this one clutch of eggs her parchment shelled eggs carry the pressed imprint of her scales an Indication of the strength of her embrace At last her efforts are rewarded But the babies can't stay here. They must leave their sanctuary and find food in the tangled world above They're over 60 centimeters long already big enough to be a threat to the smaller inhabitants of the forest But they are themselves vulnerable
+[asr] JSON saved at: mlvu_samples/MLVU/video/9_summary/205.asr.json
+
+[asr] language=en, segments=38, srt=mlvu_samples/MLVU/video/9_summary/205.srt
+
+[QA]  The video starts with a chimpanzee climbing a tree, using its hands and feet to navigate the branches. The scene then transitions to a wide shot of the rainforest, showcasing the dense vegetation and towering trees. The camera pans across the lush landscape, highlighting the variety of plant species and the intricate ecosystem. The focus shifts to a snake, which is seen basking in the sun, its scales glistening in the light. The snake's movements are slow and deliberate as it adjusts its position to absorb more warmth. The camera zooms in on the snake's head, capturing its intense gaze and the intricate patterns on its scales. The snake remains motionless for a while, basking in the sun until it decides to move again. The video ends with a shot of the snake slithering away into the underbrush, disappearing into the dense foliage.
+
+JOB STATISTICS
+==============
+Job ID: 13996148
+Cluster: snellius
+User/Group: avozikis1/avozikis1
+State: RUNNING
+Nodes: 1
+Cores per node: 18
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 00:37:12 core-walltime
+Job Wall-clock time: 00:02:04
+Memory Utilized: 0.00 MB
+Memory Efficiency: 0.00% of 64.00 GB (64.00 GB/node)
+WARNING: Efficiency statistics can only be obtained after the job has ended as seff tool is based on the accounting database data.
