@@ -1,0 +1,19 @@
+/usr/bin/python
+Python 3.9.18
+exe= /usr/bin/python
+VIRTUAL_ENV= /gpfs/home6/avozikis/my_env
+[env] device=cuda, dtype=torch.bfloat16, model=Qwen/Qwen2.5-VL-7B-Instruct
+
+JOB STATISTICS
+==============
+Job ID: 13994771
+Cluster: snellius
+User/Group: avozikis1/avozikis1
+State: FAILED (exit code 1)
+Nodes: 1
+Cores per node: 18
+CPU Utilized: 00:00:08
+CPU Efficiency: 2.22% of 00:06:00 core-walltime
+Job Wall-clock time: 00:00:20
+Memory Utilized: 3.56 MB
+Memory Efficiency: 0.01% of 64.00 GB (64.00 GB/node)

@@ -1,0 +1,24 @@
+/usr/bin/python
+Python 3.9.18
+exe= /usr/bin/python
+VIRTUAL_ENV= /gpfs/home6/avozikis/my_env
+[env] device=cuda, dtype=torch.bfloat16, model=Qwen/Qwen2.5-VL-7B-Instruct
+[ffmpeg] found at /sw/arch/RHEL9/EB_production/2024/software/FFmpeg/7.0.2-GCCcore-13.3.0/bin/ffmpeg
+[demo] found 2 videos under mlvu_samples/MLVU/video/9_summary
+[demo] summarizing with ASR: mlvu_samples/MLVU/video/9_summary/205.mp4
+————————————————————————————————————————————————————————————————————————————————
+[asr] loading faster-whisper model=medium, device=cuda, compute_type=float16
+
+JOB STATISTICS
+==============
+Job ID: 13995795
+Cluster: snellius
+User/Group: avozikis1/avozikis1
+State: FAILED (exit code 134)
+Nodes: 1
+Cores per node: 18
+CPU Utilized: 00:00:22
+CPU Efficiency: 3.82% of 00:09:36 core-walltime
+Job Wall-clock time: 00:00:32
+Memory Utilized: 3.85 MB
+Memory Efficiency: 0.01% of 64.00 GB (64.00 GB/node)

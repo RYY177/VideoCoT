@@ -1,0 +1,86 @@
+torch: 2.7.0+cu126 build CUDA: 12.6
+CUDA available: True
+GPU: NVIDIA A100-SXM4-40GB
+cuDNN enabled: True version: 90501
+CUDNN_LIBDIR: /home/avozikis1/my_env/lib64/python3.9/site-packages/nvidia/cudnn/lib
+libcudnn*: ['/home/avozikis1/my_env/lib64/python3.9/site-packages/nvidia/cudnn/lib/libcudnn_ops.so.9', '/home/avozikis1/my_env/lib64/python3.9/site-packages/nvidia/cudnn/lib/libcudnn.so.9', '/home/avozikis1/my_env/lib64/python3.9/site-packages/nvidia/cudnn/lib/libcudnn_cnn.so.9', '/home/avozikis1/my_env/lib64/python3.9/site-packages/nvidia/cudnn/lib/libcudnn_engines_precompiled.so.9', '/home/avozikis1/my_env/lib64/python3.9/site-packages/nvidia/cudnn/lib/libcudnn_heuristic.so.9', '/home/avozikis1/my_env/lib64/python3.9/site-packages/nvidia/cudnn/lib/libcudnn_engines_runtime_compiled.so.9', '/home/avozikis1/my_env/lib64/python3.9/site-packages/nvidia/cudnn/lib/libcudnn_adv.so.9', '/home/avozikis1/my_env/lib64/python3.9/site-packages/nvidia/cudnn/lib/libcudnn_graph.so.9']
+[env] device=cuda, dtype=torch.bfloat16, model=Qwen/Qwen2.5-VL-7B-Instruct
+[ffmpeg] found at /sw/arch/RHEL9/EB_production/2024/software/FFmpeg/7.0.2-GCCcore-13.3.0/bin/ffmpeg
+[demo] found 2 videos under mlvu_samples/MLVU/video/9_summary
+[demo] summarizing with ASR: mlvu_samples/MLVU/video/9_summary/movie101_107.mp4
+————————————————————————————————————————————————————————————————————————————————
+[asr] loading faster-whisper model=medium, device=cuda, compute_type=float16
+The video sequence unfolds in a bustling market setting, transitioning to quieter scenes of daily life and interactions among characters.
+
+### Market Scene:
+1. **Market Arrival:**
+   - The video opens with a wide shot of the "Fortune Market," a vibrant and lively market scene.
+   - A woman drives a blue van into the market, accompanied by a man in the passenger seat. She parks near the entrance, and the man exits the vehicle, appearing drowsy or tired.
+   - The woman, dressed casually, gets out of the van and begins unloading items from the back, including large blue buckets and bags of groceries.
+
+2. **Market Activity:**
+   - Inside the market, the environment is crowded with people shopping for fresh produce and seafood.
+   - The market is well-lit with red hanging lights, creating a warm ambiance.
+   - Various stalls display fresh fruits, vegetables, and seafood, with signs written in Chinese characters.
+   - A woman in a plaid shirt and apron is seen interacting with customers, engaging in conversations about prices and product quality.
+   - The market is bustling with activity, with people moving around, examining goods, and making purchases.
+
+3. **Market Dispute:**
+   - The focus shifts to a specific interaction between a customer and a vendor at a fish stall.
+   - The customer, holding a bag of greens, engages in a conversation with the vendor, who appears to be a man wearing a white apron.
+   - The vendor seems to be explaining something about the price or quality of the meat, as indicated by the subtitles.
+   - The customer listens attentively, and the vendor gestures while speaking.
+   - The scene captures the dynamic nature of the market, highlighting the interactions between vendors and customers.
+
+4. **Market Chaos:**
+   - The market becomes chaotic when a man in a gray vest and yellow shirt enters the scene, seemingly causing a disturbance.
+   - He appears agitated and confrontational, leading to a physical altercation involving other market vendors and customers.
+   - The altercation escalates quickly, with people pushing and shoving, and the market becoming disorganized.
+   - The vendor in the plaid shirt and apron tries to mediate the situation, but the chaos continues.
+
+5. **Market Resolution:**
+   - The scene transitions to a quieter moment where the vendor in the plaid shirt and apron is seen preparing food at a stall.
+   - She is focused on cooking, stirring a pot of fish soup, and serving it to a customer.
+   - The customer, a man in a gray vest, pays for the soup and leaves, indicating a resolution to the earlier conflict.
+   - The vendor continues her work, and the market returns to its usual rhythm.
+
+6. **Nighttime Scenes:**
+   - The video shifts to nighttime, showing the market empty and quiet.
+   - The camera pans over the market, now dimly lit, with only a few scattered lights illuminating the area.
+   - The market appears deserted, with no visible activity, suggesting the end of the day's hustle and bustle.
+
+7. **Interior Scenes:**
+   - The video then moves indoors, showing a dimly lit room with a calendar on the wall.
+   - A person is seen lying down, possibly resting or sleeping, with a light source casting shadows across the room.
+   - The atmosphere is calm and quiet, contrasting sharply with the earlier market scenes.
+
+8. **Conclusion:**
+   - The final scenes depict the woman in the plaid shirt and apron driving away in her van, heading home after a long day at the market.
+   - The van is shown parked outside the market, and the woman appears tired but content, indicating the end of her day's work.
+   - The video concludes with a sense of closure, capturing the routine and daily life of the market vendor.
+
+This sequence effectively portrays the dynamic and often chaotic nature of a busy market, interspersed with quieter moments of reflection and routine, providing a comprehensive view of the market's activities and the lives of those who work there.
+[summary] TXT saved at: mlvu_samples/MLVU/video/9_summary/movie101_107.summary.txt
+
+[ASR full transcript]
+ 她一个手刹熟练地将车停到门口 紧接着她拿起方向盘前的妈布开门下车 老爸到了 阿妙边说边把车门打开 老爸迷迷乎乎抬起眼瞥了一眼 之后又把车门关闭沉沉睡去 阿妙仿佛早已习惯老爸的偷懒 她抬腿跳上货车的后备箱 吃力地挪动装满了鱼桶 然后将鱼桶提起放到地上 此时富贵区里挤满了买东西的人 20块这么多 你第一次买菜啊 你第一次买菜啊 20块你想要多少 妙爸不耐烦地教训着挡住去路的女人 紧接着推着车子走到自己卖鱼的摊点 自己的摊位被别人的东西摆满 推着满满一车东西的妙爸忍不住开始吐槽 阿妙看着里面写着富贵鲜鱼的泡沫箱 略带生气地看了一眼对面 写着富贵鲜鱼的招牌 猪肉佬在一旁磨着刀 20块钱的牛肉两个人吃的 猪肉佬听到女人的话 看着挂在旁边的猪头一脸迷惑 对方看他丝毫没有行动 又冲他比着手势 两个人吃就两斤吧 不是怪 他拿到割了一小块装在袋子里 有两斤 两斤 菜婆 菜婆 什么事啊 我教你做病的不会关你搞什么 还给你 还给你 先走先走 不关你的事 过过过 还给你 还给你 料爸一边喊一边将包装带有 富贵鲜鱼的草木箱 全部扔到隔壁富贵鲜鱼的摊点里 旁边的摊主 看到这一路下得苍黄而逃 买东西的人一论纷纷 老爸 外面有垃圾罩啊 不管他哪来哪去 拍几片姜去掉腥味 切点葱花 再加一点番茄 腥味就更浓了 做之前先把鱼煎一煎 这样汤就是奶白色的了 第一次做饭给男朋友吃啊 是啊 有件事我想问问你 你看我的样子 你觉得我像多少岁 二十二 不止了 十四了 还有六年就到了 你还有六年吗 我只有三年了 哇 那你的问题就大了 猪肉老看不下去 走过去说道 买完就走吧 此时 富贵区里的顾客 都莫名其妙被摊主轰走 料爸走过去对阿妙说 菜场子 阿妙转过头 只见一个梳着卷毛的男人 一脸嚣张地走进来 男人停在富贵鲜鱼摊点 抬头看着被砸下来的招牌 随后他质问一旁的跟班 男人听后生气地喊道 气势汹汹的男人 甩开妙爸的手 来到阿妙面前 阿妙抬起头 直直对上男人凶狠的眼神 随后男人躲 阿妙说完后 男人瞪着他 弯下腰从一旁的水箱里 提起一支白扇 随后他正起身 将手里的白扇丢在地上 阿妙看着这一幕眉头颈皱 男人从兜里掏出50元 说完 男人把钱狠狠丢在案板上 阿妙低头看了一眼 随后他一把 抓起地上的白扇 少说一句少说一句 算了算了 紧张的对峙被打断 一个戴着眼镜的中年男人 迈着步子缓缓走来 身后还跟着一些小弟 你们谁跟他过不去 就是跟我过不去 说的对 你们谁跟妥叔过不去 就是跟我过不去 男人走过去对妥叔说 妥叔 你亲戚啊 摆你一档摆得很嚣张啊 妥叔看了他一眼说 他欠我钱 打工还我的债 你啊 欺负他 那我的债就不用收了 还有啊 淡水鱼你也卖了 垃圾又摆在我档口这 我都没说过你啊 男人被妥叔教训之后 抬眼恶狠狠地盯着 站在对面的阿妙 服不服 妥叔转过头 拍了拍猪肉佬的胸脯 走向旁边 服不服 随后又走向另一边问道 服不服 紧接着他用手擦了擦 被喷口水的脸 一把抹到男人身上 搞定了 差点忘了 是最新鲜的 我知道 妥叔边说边把余地给小弟 准时还钱啊 然后他看了看四周 说道 继续买菜 我送人出去 说完妥叔撞看男人 向外走去 男人不服气的 白了一眼 随后他再次看向 摊位前的阿妙 冷漠的眼神 仿佛要射出寒光 到了晚上 富贵须一片寂静 漆黑的过道里 突然闪起一丝光亮 远远看到两个人 拿着手电筒 弯着腰走进来 紧接着 停在阿妙的摊位前 一个拿着大锤的手 正准备砸向墙上的电闸 电闸过了没有 别电死我 咋哈 猪肉佬挥手砸过去 男人则将垃圾 倒入阿妙的摊位里 对猪肉佬说道 撒包尿进去 怎么又瘦啊 你吃东西上火越油腻 你的尿肯定比我黄 快点尿 最过分的要求 猪肉佬犹豫了一下 尿啊 猪肉佬拗不过 男人的要求 只好背过身照做 猪肉佬听到叫脉声 立刻提上裤子 随后二人来到 富贵须的楼顶 这时 妙爸搂着一个女人 走到阿妙面前 我女儿 这是鱼粥 很棒 两碗再走 这不是经常来买菜的 那个飞用吗 它什么时候泡上来 余老满脸嫌弃的说 老家伙吃的比你还油腻 妙爸掀开塑料布 打开密码箱的 另一个隔层 从里面拿了些钱出来 阿妙头也不回地说道 这一礼拜你只有 这么多零用钱了 你胖就超支了 我不会再给你 不准回家 这不劫了 我不再回家了 这不劫了 阿妙无奈地看着 老爸和女人离去的背影 猪肉老看到皺起眉头 要不我们下去买碗粥吧 我才不吃 男人说完转身离开 猪肉老看着路边 辛苦卖鱼粥的阿妙 明嘴沉默 谢谢30块 客人站起来 将钱递给他离开 阿妙随机拿起碗筷 转过身收拾 这时 猪肉老默默地 从车后走过来 跟阿妙打招呼 一碗粥带走 谢谢 谢谢 谢谢 谢谢 谢谢 一碗粥带走 谢谢 阿妙熟练地 拿起车上的打包盒 揭开粥桶的锅盖 好焦 阿妙听后笑了笑 陈皮 姜丝 你自己熬的 卖剩的鱼就熬成粥了 比做淋浴球好赚多了 你真厉害 赚点小钱 喂 叛妻啊死猪肉老 男人在对面的窗户里 骂了一句 随后放下摆折帘 转身离去 猪肉老不好意思地说 我就住在上面 有空过来玩 阿妙点了点头 递出渔州 猪肉老也呆站在原地傻笑 15块 缓过神来的猪肉老 从兜里掏出钱递过去 谢谢 15块 再见 猪肉老拿着渔州 向前走了几步 随后转过头说 明天见 明天见 得到回应后 猪肉老带着满脸的笑容离去 昏暗的街道边 只剩阿妙一个人 在收拾杂乱的小摊 她将桌椅整整齐齐 倚靠在路边的围栏上 随后将头顶的灯熄灭 紧接着 她打开车门坐上去 她皱着眉歪了一下劳累的脖颈 然后将车座上的外套 拿到另一边 整理了一下枕头躺下去 车里的环境略微寒冷 她又拿起身旁的外套盖在身上 随后慢慢闭上眼睛 转眼到了第二天凌晨 海鲜市场的摊主们 把装满海鲜的泡沫箱 摆满一地 等待小贩来进货
+[asr] JSON saved at: mlvu_samples/MLVU/video/9_summary/movie101_107.asr.json
+
+[asr] language=zh, segments=303, srt=mlvu_samples/MLVU/video/9_summary/movie101_107.srt
+
+[QA]  The video begins with a scene at the "Fortune Market," where a woman drives a truck into the market. She is followed by her father, who is also in the truck. The woman gets out of the truck and starts unloading blue buckets from the back, while her father remains inside. The market is bustling with people shopping for various goods, including fresh produce and seafood. The woman, wearing an apron, is seen interacting with customers, helping them select items and packaging their purchases. There's a lively atmosphere as people browse through the stalls, engaging in conversations and transactions. The market is well-lit, with red hanging lights adding to the ambiance. The woman appears to be a vendor, possibly selling fish or other seafood products, as she is seen handling fish and engaging in discussions with customers. The video captures the essence of a busy day at the market, highlighting the interactions between vendors and customers, the variety of goods available, and the overall hustle and bustle of the environment.
+
+JOB STATISTICS
+==============
+Job ID: 13996147
+Cluster: snellius
+User/Group: avozikis1/avozikis1
+State: RUNNING
+Nodes: 1
+Cores per node: 18
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 00:53:42 core-walltime
+Job Wall-clock time: 00:02:59
+Memory Utilized: 0.00 MB
+Memory Efficiency: 0.00% of 64.00 GB (64.00 GB/node)
+WARNING: Efficiency statistics can only be obtained after the job has ended as seff tool is based on the accounting database data.

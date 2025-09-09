@@ -1,0 +1,70 @@
+/usr/bin/python
+Python 3.9.18
+exe= /usr/bin/python
+VIRTUAL_ENV= /gpfs/home6/avozikis/my_env
+[pip] installing: ['faster-whisper']
+Collecting faster-whisper
+  Downloading faster_whisper-1.2.0-py3-none-any.whl.metadata (16 kB)
+Collecting ctranslate2<5,>=4.0 (from faster-whisper)
+  Downloading ctranslate2-4.6.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (10 kB)
+Requirement already satisfied: huggingface-hub>=0.13 in /gpfs/home4/avozikis1/my_env/lib/python3.9/site-packages (from faster-whisper) (0.34.4)
+Requirement already satisfied: tokenizers<1,>=0.13 in /gpfs/home4/avozikis1/my_env/lib64/python3.9/site-packages (from faster-whisper) (0.21.4)
+Collecting onnxruntime<2,>=1.14 (from faster-whisper)
+  Downloading onnxruntime-1.19.2-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (4.5 kB)
+Requirement already satisfied: av>=11 in /gpfs/home4/avozikis1/my_env/lib64/python3.9/site-packages (from faster-whisper) (15.0.0)
+Requirement already satisfied: tqdm in /gpfs/home4/avozikis1/my_env/lib64/python3.9/site-packages (from faster-whisper) (4.67.1)
+Requirement already satisfied: setuptools in /gpfs/home4/avozikis1/my_env/lib/python3.9/site-packages (from ctranslate2<5,>=4.0->faster-whisper) (53.0.0)
+Requirement already satisfied: numpy in /gpfs/home4/avozikis1/my_env/lib64/python3.9/site-packages (from ctranslate2<5,>=4.0->faster-whisper) (2.0.2)
+Requirement already satisfied: pyyaml<7,>=5.3 in /gpfs/home4/avozikis1/my_env/lib64/python3.9/site-packages (from ctranslate2<5,>=4.0->faster-whisper) (6.0.2)
+Collecting coloredlogs (from onnxruntime<2,>=1.14->faster-whisper)
+  Downloading coloredlogs-15.0.1-py2.py3-none-any.whl.metadata (12 kB)
+Collecting flatbuffers (from onnxruntime<2,>=1.14->faster-whisper)
+  Downloading flatbuffers-25.2.10-py2.py3-none-any.whl.metadata (875 bytes)
+Requirement already satisfied: packaging in /gpfs/home4/avozikis1/my_env/lib64/python3.9/site-packages (from onnxruntime<2,>=1.14->faster-whisper) (25.0)
+Requirement already satisfied: protobuf in /gpfs/home4/avozikis1/my_env/lib64/python3.9/site-packages (from onnxruntime<2,>=1.14->faster-whisper) (6.30.2)
+Requirement already satisfied: sympy in /gpfs/home4/avozikis1/my_env/lib64/python3.9/site-packages (from onnxruntime<2,>=1.14->faster-whisper) (1.13.3)
+Requirement already satisfied: filelock in /gpfs/home4/avozikis1/my_env/lib64/python3.9/site-packages (from huggingface-hub>=0.13->faster-whisper) (3.18.0)
+Requirement already satisfied: fsspec>=2023.5.0 in /gpfs/home4/avozikis1/my_env/lib/python3.9/site-packages (from huggingface-hub>=0.13->faster-whisper) (2025.3.0)
+Requirement already satisfied: requests in /gpfs/home4/avozikis1/my_env/lib64/python3.9/site-packages (from huggingface-hub>=0.13->faster-whisper) (2.32.3)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /gpfs/home4/avozikis1/my_env/lib64/python3.9/site-packages (from huggingface-hub>=0.13->faster-whisper) (4.13.2)
+Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in /gpfs/home4/avozikis1/my_env/lib64/python3.9/site-packages (from huggingface-hub>=0.13->faster-whisper) (1.1.7)
+Collecting humanfriendly>=9.1 (from coloredlogs->onnxruntime<2,>=1.14->faster-whisper)
+  Downloading humanfriendly-10.0-py2.py3-none-any.whl.metadata (9.2 kB)
+Requirement already satisfied: charset-normalizer<4,>=2 in /gpfs/home4/avozikis1/my_env/lib64/python3.9/site-packages (from requests->huggingface-hub>=0.13->faster-whisper) (3.4.1)
+Requirement already satisfied: idna<4,>=2.5 in /gpfs/home4/avozikis1/my_env/lib64/python3.9/site-packages (from requests->huggingface-hub>=0.13->faster-whisper) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /gpfs/home4/avozikis1/my_env/lib64/python3.9/site-packages (from requests->huggingface-hub>=0.13->faster-whisper) (2.4.0)
+Requirement already satisfied: certifi>=2017.4.17 in /gpfs/home4/avozikis1/my_env/lib64/python3.9/site-packages (from requests->huggingface-hub>=0.13->faster-whisper) (2025.1.31)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /gpfs/home4/avozikis1/my_env/lib64/python3.9/site-packages (from sympy->onnxruntime<2,>=1.14->faster-whisper) (1.3.0)
+Downloading faster_whisper-1.2.0-py3-none-any.whl (1.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 73.8 MB/s  0:00:00
+Downloading ctranslate2-4.6.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (38.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 38.4/38.4 MB 70.3 MB/s  0:00:00
+Downloading onnxruntime-1.19.2-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (13.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.2/13.2 MB 29.2 MB/s  0:00:00
+Downloading coloredlogs-15.0.1-py2.py3-none-any.whl (46 kB)
+Downloading humanfriendly-10.0-py2.py3-none-any.whl (86 kB)
+Downloading flatbuffers-25.2.10-py2.py3-none-any.whl (30 kB)
+Installing collected packages: flatbuffers, humanfriendly, ctranslate2, coloredlogs, onnxruntime, faster-whisper
+
+Successfully installed coloredlogs-15.0.1 ctranslate2-4.6.0 faster-whisper-1.2.0 flatbuffers-25.2.10 humanfriendly-10.0 onnxruntime-1.19.2
+[env] device=cuda, dtype=torch.bfloat16, model=Qwen/Qwen2.5-VL-7B-Instruct
+[ffmpeg] NOT FOUND — please add ffmpeg to PATH (e.g., module load ffmpeg)
+[demo] found 2 videos under mlvu_samples/MLVU/video/9_summary
+[demo] summarizing with ASR: mlvu_samples/MLVU/video/9_summary/205.mp4
+————————————————————————————————————————————————————————————————————————————————
+[asr] loading faster-whisper model=medium, device=cuda, compute_type=float16
+
+JOB STATISTICS
+==============
+Job ID: 13995758
+Cluster: snellius
+User/Group: avozikis1/avozikis1
+State: RUNNING
+Nodes: 1
+Cores per node: 18
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 00:19:48 core-walltime
+Job Wall-clock time: 00:01:06
+Memory Utilized: 0.00 MB
+Memory Efficiency: 0.00% of 64.00 GB (64.00 GB/node)
+WARNING: Efficiency statistics can only be obtained after the job has ended as seff tool is based on the accounting database data.

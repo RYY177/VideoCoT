@@ -1,0 +1,18 @@
+ERROR: Could not install packages due to an OSError: [Errno 13] Permission denied: '/usr/local/lib/python3.9'
+Consider using the `--user` option or check the permissions.
+
+Traceback (most recent call last):
+  File "/gpfs/home4/avozikis1/Qwen-2.5/qwen.py", line 17, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/gpfs/home4/avozikis1/Qwen-2.5/qwen.py", line 19, in <module>
+    pipi(["torch"]) ; import torch
+  File "/gpfs/home4/avozikis1/Qwen-2.5/qwen.py", line 13, in pipi
+    subprocess.run([sys.executable, "-m", "pip", "install", "--upgrade", *pkgs], check=True)
+  File "/usr/lib64/python3.9/subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/usr/bin/python', '-m', 'pip', 'install', '--upgrade', 'torch']' returned non-zero exit status 1.

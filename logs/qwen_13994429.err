@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/gpfs/home4/avozikis1/Qwen-2.5/qwen.py", line 52, in <module>
+    import qwen_vl_utils
+  File "/home/avozikis1/.local/lib/python3.9/site-packages/qwen_vl_utils/__init__.py", line 1, in <module>
+    from .vision_process import (
+  File "/home/avozikis1/.local/lib/python3.9/site-packages/qwen_vl_utils/vision_process.py", line 17, in <module>
+    import torchvision
+ModuleNotFoundError: No module named 'torchvision'

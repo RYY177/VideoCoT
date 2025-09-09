@@ -1,0 +1,20 @@
+/usr/bin/python
+Python 3.9.18
+exe= /usr/bin/python
+VIRTUAL_ENV= /gpfs/home6/avozikis/my_env
+[asr] transcribing: test.wav
+
+JOB STATISTICS
+==============
+Job ID: 13996024
+Cluster: snellius
+User/Group: avozikis1/avozikis1
+State: RUNNING
+Nodes: 1
+Cores per node: 18
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 00:33:00 core-walltime
+Job Wall-clock time: 00:01:50
+Memory Utilized: 0.00 MB
+Memory Efficiency: 0.00% of 64.00 GB (64.00 GB/node)
+WARNING: Efficiency statistics can only be obtained after the job has ended as seff tool is based on the accounting database data.

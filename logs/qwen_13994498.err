@@ -1,0 +1,95 @@
+/home/avozikis1/my_env/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+Could not cache non-existence of file. Will ignore error and continue. Error: [Errno 13] Permission denied: '/gpfs/scratch1/avozikis1'
+Traceback (most recent call last):
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/huggingface_hub/utils/_http.py", line 409, in hf_raise_for_status
+    response.raise_for_status()
+  File "/home/avozikis1/my_env/lib64/python3.9/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/processor_config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 1546, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 1463, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 286, in _request_wrapper
+    response = _request_wrapper(
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 310, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/huggingface_hub/utils/_http.py", line 420, in hf_raise_for_status
+    raise _format(EntryNotFoundError, message, response) from e
+huggingface_hub.errors.EntryNotFoundError: 404 Client Error. (Request ID: Root=1-6898b10d-6b38bcaa438a64a06932948a;09cac144-a02f-4d95-a67e-32fe9053df22)
+
+Entry Not Found for url: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/processor_config.json.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.9/pathlib.py", line 1251, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/scratch1/avozikis1/hfcache/hub/models--Qwen--Qwen2.5-VL-7B-Instruct/refs'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.9/pathlib.py", line 1251, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/scratch1/avozikis1/hfcache/hub/models--Qwen--Qwen2.5-VL-7B-Instruct'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.9/pathlib.py", line 1251, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/scratch1/avozikis1/hfcache/hub'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.9/pathlib.py", line 1251, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/scratch1/avozikis1/hfcache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/transformers/utils/hub.py", line 479, in cached_files
+    hf_hub_download(
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 1010, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 1073, in _hf_hub_download_to_cache_dir
+    (url_to_download, etag, commit_hash, expected_size, xet_file_data, head_call_error) = _get_metadata_or_catch_error(
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 1562, in _get_metadata_or_catch_error
+    _cache_commit_hash_for_specific_revision(storage_folder, revision, commit_hash)
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 766, in _cache_commit_hash_for_specific_revision
+    ref_path.parent.mkdir(parents=True, exist_ok=True)
+  File "/usr/lib64/python3.9/pathlib.py", line 1255, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  File "/usr/lib64/python3.9/pathlib.py", line 1255, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  File "/usr/lib64/python3.9/pathlib.py", line 1255, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  [Previous line repeated 1 more time]
+  File "/usr/lib64/python3.9/pathlib.py", line 1251, in mkdir
+    self._accessor.mkdir(self, mode)
+PermissionError: [Errno 13] Permission denied: '/gpfs/scratch1/avozikis1'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/gpfs/home4/avozikis1/Qwen-2.5/qwen.py", line 79, in <module>
+    processor = AutoProcessor.from_pretrained(
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/transformers/models/auto/processing_auto.py", line 293, in from_pretrained
+    processor_config_file = cached_file(pretrained_model_name_or_path, PROCESSOR_NAME, **cached_file_kwargs)
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/transformers/utils/hub.py", line 321, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "/home/avozikis1/my_env/lib/python3.9/site-packages/transformers/utils/hub.py", line 524, in cached_files
+    raise OSError(
+OSError: PermissionError at /gpfs/scratch1/avozikis1 when downloading Qwen/Qwen2.5-VL-7B-Instruct. Check cache directory permissions. Common causes: 1) another user is downloading the same model (please wait); 2) a previous download was canceled and the lock file needs manual removal.
